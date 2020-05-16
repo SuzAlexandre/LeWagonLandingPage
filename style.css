@@ -1,0 +1,114 @@
+/* Write some CSS below */
+h1, h2, h3 {
+	font-size: 36px;
+	letter-spacing: 5px;
+	font-family:'Chivo' sans-serif;
+	font-weight: bold;
+}
+
+.banner{
+    background-color: black;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.banner h1 {color: white;}
+
+.banner p {color: white;}
+
+.button-blue{
+	color: white;
+	background-color: navy;
+	padding: 10px 30px;
+	border-radius: 15%;
+}
+
+h1 {color: rgb(50,50,50);}
+
+h2 {color: rgb(50,50,50);}
+
+h3 {color: rgb(50,50,50);}
+
+p {font-family:'Chivo' sans-serif;
+font-size: 20px;}
+
+.cards-section{
+    
+    background-color: rgb(255,255,255);
+    padding: 5px 50px;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+    padding: 50px;
+    background-color: rgb(255,255,255);
+    margin: auto;
+}
+
+.cards-container {
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 16px;
+    width: 250px;
+}
+
+.cards-container img{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+
+.footer {background-color: black;
+	padding: 15px;
+}
+
+.footer p { 
+	text-align: center;
+    color: rgb(130,130,130);
+    font-style: italic;
+    font-weight: bold
+}
+
+/* Cards media queries */
+@media (max-width: 800px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .card-white {
+      width: auto;
+    }
+  }
+    
+  /* Container media queries */
+  @media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+  }
+  
+  
+  @media (min-width: 800px) {
+    .container {
+      width: 600px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .container {
+      width: 800px;
+    }
+  }
+  
+  
